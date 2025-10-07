@@ -1,3 +1,9 @@
+import { AppProvider } from "./contexts/AppProvider";
+
 export default function App() {
-  return <div className="App">Hello World!</div>;
+  return (
+    <AppProvider>
+      <div className="App">Hello World!</div>
+    </AppProvider>
+  )
 }
